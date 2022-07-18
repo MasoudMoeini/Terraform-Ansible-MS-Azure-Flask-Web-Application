@@ -1,22 +1,29 @@
 ---
   - name: "Running Flask App with Ansible"
-    hosts: localhost
-    connection: local 
+    hosts: all
+    remote_user: azureuser
+    become: yes
     tasks:
-    #- name: installing python virtual environment
-     # command: python3 -m venv venv
-    #- name:  Activating virtual env
-     # command:  . venv/bin/activate
-      #command: python3 -m venv venv
-    - name: install the package, force upgrade
-      pip:
-        name: pip
-        executable: pip3
+    - name: Ensure pip is at the latest version
+      apt:
+        name: python3-pip
         state: latest
+        update_cache: yes 
+    - name: installing python virtual environment
+      command: python3 -m venv venv
+    - name:  Activating virtual env
+      command:  . venv/bin/activate
+      command: python3 -m venv venv
+
+    #- name: install the package, force upgrade
+     # pip:
+      #  name: pip
+       # executable: pip3
+        #state: latest
     - name: Your copy task
       copy: src={{ item.src }} dest={{ item.dest }}
       with_items:
-        - { src: 'requirements.txt', dest: '/home/requirements.txt' }
+        - { src: 'requirements.txt', dest: '$HOME/requirements.txt' }
         - { src: 'app.py', dest: '$HOME/app.py' }
         - { src: 'main.py', dest: '$HOME/main.py' }
         - { src: 'minst.py', dest: '$HOME/minst.py' }
@@ -24,7 +31,7 @@
         - { src: 'templates/', dest: '$HOME/templates/' }
     - name: install python libraries
       pip:
-        requirements: root/requirements.txt
+        requirements: /root/requirements.txt
         extra_args: --no-cache-dir
     - name: copy template systemd service config
       copy:
