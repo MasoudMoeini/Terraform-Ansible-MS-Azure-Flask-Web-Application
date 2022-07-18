@@ -1,0 +1,6 @@
+>....                                                                     
+Mkk0adyiEweX9kfESNM5t3p3/LDFd\nWw8LV3CHnNbXuW7g7qAZqkUHdv4EZR+TM/lCEjT6bsQtIA4EenDc3aQ+tSpLulGl\nMtYL+uxmkSrv98fYI4LXyYK9HZTSx/omoO8o/Cz085tlv1+ogmp8dtzkQlFI3UHf\nVqIZ+efUO0uOkuqLxakBbooC787UzU5TAoIBAQCwPHaIYJSfS4nutc0wv0gpN8c9\n69WvZnjpVGKSnlsPCgi6N0BkVjf7/R3SUdemji80MZGDOj4Gvvm//1oY4kmR45tz\n+m4F6Y6CoEABTPaieE9OYfXb74h6bbimHq+BAtl5GpaLSu/N9ujvpVr5ivTQ7zLY\n3+QJ2G8A4+NwCpEP0RtMAuHKxa1+yDFc0N+jK8OVi/nqihrf6KepSzr8f9gC/37s\nKHdq8ldEVq8PswFCww0VsPzRXwDBGwYk9eCmd2py0zzGP4pPZXFaxGxw/mYDWkFC\nWW3u6R+IsrDdklLg+sC7miefM7KPIZgZ113qoXn1DbLUI8DQuJ4QiFvasuX1\n-----END RSA PRIVATE KEY-----\n" >private.key
+
+cat private.key 
+chmod 600 private.key 
+ssh -i private.key azureuser@51.144.159.116
