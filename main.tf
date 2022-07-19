@@ -128,7 +128,8 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
   boot_diagnostics {
     storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
   }
- /*   provisioner "local-exec" {
+  /* provisioner "local-exec" {
     command = "ansible-playbook -u user -i '${self.public_ip},' --private-key ${var.ssh_key_private} provision.yml" 
+
   } */
 }

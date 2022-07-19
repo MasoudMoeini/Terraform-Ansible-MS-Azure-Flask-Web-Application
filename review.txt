@@ -7,4 +7,4 @@ ssh -i private.key azureuser@51.144.159.116
 
   }
 
-  ansible-playbook -u user -i 40.114.199.91, --private-key private.key flask.yaml
+  ansible-playbook -u user -i 20.126.41.162, --private-key private.key flask.yaml
