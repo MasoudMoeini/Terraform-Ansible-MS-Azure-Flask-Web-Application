@@ -36,7 +36,8 @@ ssh -i private.key  azureuser@<public_ip_address>
 ```
 ansible-playbook -u user -i <public_ip_address>, --private-key private.key flask.yaml
 ```
-The application should be available at:
+In Azure: Vitual Machine->networking -> add inbound port rule(5000)<br/>
+The application should be available at:<br/>
 ```
 http://<public_ip_address>
 ```
