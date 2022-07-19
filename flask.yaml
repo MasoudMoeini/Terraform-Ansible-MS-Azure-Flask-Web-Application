@@ -4,9 +4,9 @@
     remote_user: azureuser
     become: yes
     tasks:
-    - name: Ensure python3 is at the latest version
+    - name: Ensure python3-pip is at the latest version
       apt:
-        name: python3
+        name: python3-pip
         state: latest
         update_cache: yes 
 
