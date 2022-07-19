@@ -8,3 +8,6 @@ ssh -i private.key azureuser@51.144.159.116
   }
 
   ansible-playbook -u user -i 51.137.43.0, --private-key private.key flask.yaml
+
+  sudo ufw enable
+  sudo ufw status

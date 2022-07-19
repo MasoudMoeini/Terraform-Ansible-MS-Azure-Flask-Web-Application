@@ -36,6 +36,10 @@ ssh -i private.key  azureuser@<public_ip_address>
 ```
 ansible-playbook -u user -i <public_ip_address>, --private-key private.key flask.yaml
 ```
+The application should be available at:
+```
+http://<public_ip_address>
+```
 To delete resources
 ```
 terraform destroy
