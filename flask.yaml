@@ -9,11 +9,7 @@
         name: python3
         state: latest
         update_cache: yes 
-    # - name: installing python virtual environment
-    #   command: python3-venv
-    # - name:  Activating virtual env
-    #   command:  . venv/bin/activate
-    
+        
     - name: install the package, force upgrade
       pip:
         name: pip
@@ -24,16 +20,6 @@
         path: /home/azureuser/app/templates/
         state: directory
         #mode: '0755'
-    
-    # - name: Your copy task
-    #   copy: src={{ item.src }} dest= {{ item.dest }}
-    #   with_items:
-    #     - { src: 'requirements.txt', dest: '/home/azureuser/app/requirements.txt' }
-    #     - { src: 'app.py', dest: '/home/azureuser/app/app.py'}
-    #     - { src: 'main.py', dest: '/home/azureuser/app/main.py' }
-    #     - { src: 'minst.py', dest: '/home/azureuser/app/minst.py' }
-    #     - { src: 'model.h5', dest: '/home/azureuser/app/model.h5' }
-    #     - { src: 'templates/', dest: '/home/azureuser/app/templates/' }
    
     - name: Your copy task
       ansible.builtin.file:
