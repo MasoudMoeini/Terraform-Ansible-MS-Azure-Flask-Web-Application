@@ -45,5 +45,9 @@ To delete resources
 ```
 terraform destroy
 ```
+```
+rm ~/.ssh/ansbile*
+```
+
 
 

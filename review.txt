@@ -6,8 +6,19 @@ ssh -i private.key azureuser@51.144.159.116
     command = "ansible-playbook -u user -i '${self.public_ip},' --private-key ${var.ssh_key_private} provision.yml" 
 
   }
+# running ansible playbook
+ansible-playbook -u user -i 20.224.127.179, --private-key private.key flask.yaml
 
-  ansible-playbook -u user -i 51.137.43.0, --private-key private.key flask.yaml
+# error with systemd
+sudo systemctl daemon-reload
+sudo systemctl start flask.service
+sudo systemctl status flask.service
+sudo systemctl enable flask.service --acces error
 
-  sudo ufw enable
-  sudo ufw status
+#error handelling for systemd
+sudo nano /etc/systemd/system/flask.service -->adding /usr/bin/python3
+which python3
+
+#to activate firewall
+sudo ufw enable
+sudo ufw status
