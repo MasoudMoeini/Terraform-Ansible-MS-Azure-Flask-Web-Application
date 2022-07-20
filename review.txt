@@ -7,9 +7,10 @@ ssh -i private.key azureuser@51.144.159.116
 
   }
 # running ansible playbook
-ansible-playbook -u user -i 20.224.127.179, --private-key private.key flask.yaml
+ansible-playbook -u user -i public_ip_address>, --private-key private.key flask.yaml
 
 # error with systemd
+login to vm : ssh -i private.key  azureuser@<public_ip_address>
 sudo systemctl daemon-reload
 sudo systemctl start flask.service
 sudo systemctl status flask.service
