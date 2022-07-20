@@ -36,13 +36,14 @@ Use SSH to connect to the virtual machine.
 ```
 ssh -i private.key  azureuser@<public_ip_address>
 ```
-For error case study look at [review]() <br/>
-In Azure: Vitual Machine->networking -> add inbound port rule(port:5000,protocol:tcp)<br/>
+For error case-study look at [review](https://github.com/MasoudMoeini/Terraform-Ansible-MS-Azure-Flask-Web-Application/blob/main/review.txt) <br/>
+In Azure: Vitual Machine->networking ->  **add inbound port rule(port:5000, protocol:tcp)**  <br/>
 The application should be available at:<br/>
 ```
 http://<public_ip_address>:5000
 ```
 You shoud see something similar in your browser:<br/>
+<img width="393" alt="Screenshot 2022-07-20 at 10 43 01" src="https://user-images.githubusercontent.com/43514418/179939623-5ff4b61c-5a0d-470d-8882-9b98955c2585.png"> <br/>
 
 To delete resources
 ```
