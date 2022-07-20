@@ -22,7 +22,7 @@ To get the SSH private key and save it to a file
 ```
 terraform output -raw tls_private_key > private.key 
 ```
-To get the virtual machine public IP address.
+To get the virtual machine public IP address at anytime
 ```
 terraform output public_ip_address
 ```
@@ -39,7 +39,10 @@ Use SSH to connect to the virtual machine manually
 ssh -i private.key  azureuser@<public_ip_address>
 ```
 For error case-study look at [review](https://github.com/MasoudMoeini/Terraform-Ansible-MS-Azure-Flask-Web-Application/blob/main/review.txt) <br/>
-In Azure: Vitual Machine->networking -> add  **inbound port rule(Port range:5000, Protocol:tcp, Name:Port_5000)**  <br/>
+```
+Excluded
+In Azure: Vitual Machine->networking -> add  **inbound port rule(Port range:5000, Protocol:tcp, Name:Port_5000)**  
+```
 The application should be available at:<br/>
 ```
 http://<public_ip_address>:5000
