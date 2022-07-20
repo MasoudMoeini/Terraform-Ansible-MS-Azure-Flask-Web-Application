@@ -40,7 +40,7 @@ ssh -i private.key  azureuser@<public_ip_address>
 ```
 For error case-study look at [review](https://github.com/MasoudMoeini/Terraform-Ansible-MS-Azure-Flask-Web-Application/blob/main/review.txt) <br/>
 ```
-This setting excluded and done by main.tf:
+This setting excluded and is done by main.tf:
 In Azure: Vitual Machine->networking -> add  inbound port rule(Port range:5000, Protocol:tcp, Name:Port_5000) 
 ```
 The application should be available at:<br/>
