@@ -39,7 +39,7 @@ Use SSH to connect to the virtual machine manually
 ssh -i private.key  azureuser@<public_ip_address>
 ```
 For error case-study look at [review](https://github.com/MasoudMoeini/Terraform-Ansible-MS-Azure-Flask-Web-Application/blob/main/review.txt) <br/>
-In Azure: Vitual Machine->networking -> add  **inbound port rule(port:5000, protocol:tcp)**  <br/>
+In Azure: Vitual Machine->networking -> add  **inbound port rule(port range:5000, protocol:tcp, Name:Port_5000)**  <br/>
 The application should be available at:<br/>
 ```
 http://<public_ip_address>:5000
