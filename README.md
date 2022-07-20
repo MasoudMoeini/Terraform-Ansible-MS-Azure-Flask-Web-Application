@@ -1,6 +1,6 @@
 # Terraform Ansible MS Azure Flask Web Application
 [Reference-terraform](https://github.com/hashicorp/terraform-provider-azurerm/tree/main/examples/virtual-machines/virtual_machine/provisioners/linux)<br/>
-This example provisions a Virtual Machine running Ubuntu 16.04-LTS with a Public IP Address and runs a remote-exec provisioner over SSH<br>
+This example provisions a Virtual Machine running Ubuntu 18.04.6 LTS with a Public IP Address and runs Ansible play-book over SSH<br>
 ``` 
 az login
 ```
