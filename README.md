@@ -45,7 +45,7 @@ The application should be available at:<br/>
 http://<public_ip_address>:5000
 ```
 You shoud see something similar in your browser<br>
-<img width="564" alt="Screenshot 2022-07-20 at 11 11 55" src="https://user-images.githubusercontent.com/43514418/179944824-44b9b6d2-7d2f-4496-9a9b-8a969672e4e0.png"><br/>
+<img width="562" alt="Screenshot 2022-07-20 at 11 28 20" src="https://user-images.githubusercontent.com/43514418/179948546-46c2602a-9b57-4f9b-b4f6-4bc5367e6342.png"><br/>
 You can test app with example images available [here](https://github.com/MasoudMoeini/Terraform-Ansible-MS-Azure-Flask-Web-Application/tree/main/example%20images%20)<br>
 
 To delete resources
