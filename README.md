@@ -1,5 +1,5 @@
 # Terraform Ansible MS Azure Flask Web Application
-[Reference-terraform](https://github.com/hashicorp/terraform-provider-azurerm/tree/main/examples/virtual-machines/virtual_machine/provisioners/linux)<br/>
+[Reference-terraform](https://docs.microsoft.com/en-us/azure/developer/terraform/create-linux-virtual-machine-with-infrastructure)<br/>
 This example provisions a Virtual Machine running Ubuntu 18.04.6 LTS with a Public IP Address and runs Ansible play-book over SSH<br>
 ``` 
 az login
