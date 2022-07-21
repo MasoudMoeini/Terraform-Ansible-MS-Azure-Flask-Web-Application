@@ -39,7 +39,7 @@
     extra_args: --no-cache-dir
 - name: copy template systemd service config
   copy:
-    src: .service
+    src: files/.service
     dest: /etc/systemd/system/flask.service
 
 - name: Start Systemd Flask App Service 
